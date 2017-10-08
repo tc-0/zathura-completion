@@ -1,0 +1,26 @@
+#compdef zathura
+
+# zsh completions for 'zathura'
+# automatically generated with http://github.com/RobSis/zsh-completion-generator
+local arguments
+
+arguments=(
+    {-h,--help}'[Show help options]'
+    {-e,--reparent}'[Reparents to window specified by xid (X11)]'
+    {-c,--config-dir}'[Path to the config directory]'
+    {-d,--data-dir}'[Path to the data directory]'
+    '--cache-dir[Path to the cache directory]'
+    {-p,--plugins-dir}'[Path to the directories containing plugins]'
+    '--fork[Fork into the background]'
+    {-w,--password}'[Document password]'
+    {-P,--page}'[Page number to go to]'
+    {-l,--debug}'[Log level (debug, info, warning, error)]'
+    {-v,--version}'[Print version information]'
+    {-x,--synctex-editor-command}'[Synctex editor (forwarded to the synctex command)]'
+    '--synctex-forward[Move to given synctex position]'
+    '--synctex-pid[Highlight given position in the given process]'
+    '--mode[Start in a non-default mode]'
+    '*:filename:_files'
+)
+
+_arguments -s $arguments
